@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="cUi-kZ-frf">
+            <objects>
+                <navigationController title="Master" id="rS3-R9-Ivy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="105" destination="8" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="64"/>
+        </scene>
+        <!--Master-->
+        <!--Detail-->
+        <scene sceneID="7">
+            <objects>
+                <viewController id="8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5"/>
+                        <viewControllerLayoutGuide type="bottom" id="6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MEMBER LOG IN" lineBreakMode="tailTruncation" minimumFontSize="10" id="42" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="231" y="335" width="138" height="20.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="66" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="150" y="320" width="300" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="563" destination="194" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="640" firstItem="66" firstAttribute="height" constant="36"/>
+                                    <constraint id="641" firstItem="66" firstAttribute="width" constant="300"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="66" firstAttribute="centerX" secondItem="9" secondAttribute="centerX" constant="0.0" id="638"/>
+                            <constraint firstItem="66" firstAttribute="centerY" secondItem="9" secondAttribute="centerY" constant="38" id="639"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="LOGIN SCREEN" id="104" key="navigationItem"/>
+                    <connections>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521" y="64"/>
+        </scene>
+        <scene sceneID="193">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="194" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="197" barStyle="black">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" colorSpace="calibratedRGB" red="1" green="0.87450980392156863" blue="0" alpha="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="196" kind="relationship" relationship="rootViewController" id="195"/>
+                    </connections>
+                    <tabBarItem key="tabBarItem" title="HOME" id="261" image="Images/home_icon.png"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="198" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="838"/>
+        </scene>
+        <scene sceneID="199">
+            <objects>
+                <viewController id="196" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="191"/>
+                        <viewControllerLayoutGuide type="bottom" id="192"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="201">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0" green="0.42745098039215684" blue="0.76078431372549016" alpha="1"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="574" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="579" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="69" width="600" height="112.5"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.96470588235294119" green="0.803921568627451" blue="0.36470588235294116" alpha="1"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="584" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="186.5" width="600" height="112.5"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.3843137254901961" green="0.81960784313725488" blue="0.65098039215686276" alpha="1"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="591" translatesAutoresizingMaskIntoConstraints="NO" image="Images/recent_order_icon.png">
+                                <rect key="frame" x="0.0" y="71.5" width="108" height="108"/>
+                                <constraints>
+                                    <constraint id="595" firstAttribute="width" secondItem="591" secondAttribute="height" constant="0.0" multiplier="1:1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="596" translatesAutoresizingMaskIntoConstraints="NO" image="Images/recent_order_icon.png">
+                                <rect key="frame" x="0.0" y="189" width="108" height="108"/>
+                                <constraints>
+                                    <constraint id="601" firstAttribute="width" secondItem="596" secondAttribute="height" constant="0.0" multiplier="1:1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="602" translatesAutoresizingMaskIntoConstraints="NO" image="Images/right_black_arrow.png">
+                                <rect key="frame" x="528" y="87" width="72" height="76.5"/>
+                                <constraints>
+                                    <constraint id="606" firstAttribute="width" secondItem="602" secondAttribute="height" constant="0.0" multiplier="49:52"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="607" translatesAutoresizingMaskIntoConstraints="NO" image="Images/right_black_arrow.png">
+                                <rect key="frame" x="528" y="205" width="72" height="76"/>
+                                <constraints>
+                                    <constraint id="612" firstAttribute="width" secondItem="607" secondAttribute="height" constant="0.0" multiplier="18:19"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="574" firstAttribute="top" secondItem="191" secondAttribute="bottom" constant="0.0" id="575"/>
+                            <constraint firstItem="201" firstAttribute="trailing" secondItem="574" secondAttribute="trailing" constant="0.0" id="576"/>
+                            <constraint firstItem="201" firstAttribute="bottom" secondItem="574" secondAttribute="bottom" constant="0.0" id="577"/>
+                            <constraint firstItem="574" firstAttribute="leading" secondItem="201" secondAttribute="leading" constant="0.0" id="578"/>
+                            <constraint firstItem="579" firstAttribute="top" secondItem="574" secondAttribute="top" constant="5" id="580"/>
+                            <constraint firstItem="579" firstAttribute="leading" secondItem="574" secondAttribute="leading" constant="0.0" id="581"/>
+                            <constraint firstItem="579" firstAttribute="width" secondItem="574" secondAttribute="width" id="582"/>
+                            <constraint firstItem="579" firstAttribute="height" secondItem="574" secondAttribute="height" id="583" multiplier="0.21"/>
+                            <constraint firstItem="584" firstAttribute="top" secondItem="579" secondAttribute="bottom" constant="5" id="585"/>
+                            <constraint firstItem="584" firstAttribute="leading" secondItem="574" secondAttribute="leading" constant="0.0" id="586"/>
+                            <constraint firstItem="584" firstAttribute="width" secondItem="579" secondAttribute="width" id="587"/>
+                            <constraint firstItem="584" firstAttribute="height" secondItem="579" secondAttribute="height" id="588"/>
+                            <constraint firstItem="591" firstAttribute="leading" secondItem="579" secondAttribute="leading" constant="0.0" id="592"/>
+                            <constraint firstItem="591" firstAttribute="centerY" secondItem="579" secondAttribute="centerY" constant="0.0" id="593"/>
+                            <constraint firstItem="591" firstAttribute="width" secondItem="579" secondAttribute="width" id="594" multiplier="0.18"/>
+                            <constraint firstItem="596" firstAttribute="centerY" secondItem="584" secondAttribute="centerY" constant="0.0" id="598"/>
+                            <constraint firstItem="596" firstAttribute="leading" secondItem="584" secondAttribute="leading" constant="0.0" id="599"/>
+                            <constraint firstItem="596" firstAttribute="width" secondItem="584" secondAttribute="width" id="600" multiplier="0.18"/>
+                            <constraint firstItem="602" firstAttribute="centerY" secondItem="579" secondAttribute="centerY" constant="0.0" id="603"/>
+                            <constraint firstItem="579" firstAttribute="trailing" secondItem="602" secondAttribute="trailing" constant="0.0" id="604"/>
+                            <constraint firstItem="602" firstAttribute="width" secondItem="579" secondAttribute="width" id="605" multiplier="0.12"/>
+                            <constraint firstItem="607" firstAttribute="centerY" secondItem="584" secondAttribute="centerY" constant="0.0" id="609"/>
+                            <constraint firstItem="584" firstAttribute="trailing" secondItem="607" secondAttribute="trailing" constant="0.0" id="610"/>
+                            <constraint firstItem="607" firstAttribute="width" secondItem="584" secondAttribute="width" id="611" multiplier="0.12"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="200" title="HOME SCREEN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="202" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437" y="838"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_img.png" width="828" height="1417"/>
+        <image name="home_icon.png" width="30" height="30"/>
+        <image name="login_banner.png" width="828" height="507"/>
+        <image name="more_icon.png" width="30" height="30"/>
+        <image name="password_icon.png" width="40" height="50"/>
+        <image name="recent_order_icon.png" width="150" height="150"/>
+        <image name="right_black_arrow.png" width="100" height="100"/>
+        <image name="search_icon.png" width="30" height="30"/>
+        <image name="user_icon.png" width="22" height="22"/>
+        <image name="username_icon.png" width="40" height="50"/>
+        <image name="Images/background_img.png" width="828" height="1417"/>
+        <image name="Images/home_icon.png" width="30" height="30"/>
+        <image name="Images/login_banner.png" width="828" height="507"/>
+        <image name="Images/more_icon.png" width="30" height="30"/>
+        <image name="Images/password_icon.png" width="40" height="50"/>
+        <image name="Images/recent_order_icon.png" width="150" height="150"/>
+        <image name="Images/right_black_arrow.png" width="100" height="100"/>
+        <image name="Images/search_icon.png" width="30" height="30"/>
+        <image name="Images/user_icon.png" width="22" height="22"/>
+        <image name="Images/username_icon.png" width="40" height="50"/>
+    </resources>
+</document>

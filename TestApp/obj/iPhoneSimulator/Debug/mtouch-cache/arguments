@@ -1,0 +1,37 @@
+# Version: 8.10.0.267 (6481535)
+# [first argument, ignore] # /Users/itc/Documents/Souvik Bhowmick/Xamarin_WS/TestApp/TestApp/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.10.0.267/bin/mtouch \
+	--cache \
+	"/Users/itc/Documents/Souvik Bhowmick/Xamarin_WS/TestApp/TestApp/obj/iPhoneSimulator/Debug/mtouch-cache" \
+	--sim \
+	"/Users/itc/Documents/Souvik Bhowmick/Xamarin_WS/TestApp/TestApp/bin/iPhoneSimulator/Debug/TestApp.app" \
+	--executable \
+	TestApp \
+	--debug \
+	--profiling \
+	--nolink \
+	--sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--sdk \
+	8.2 \
+	--targetver \
+	8.2 \
+	--abi=i386 \
+	--symbollist \
+	"/Users/itc/Documents/Souvik Bhowmick/Xamarin_WS/TestApp/TestApp/obj/iPhoneSimulator/Debug/mtouch-symbols.list" \
+	--dsym=no \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	"/Users/itc/Documents/Souvik Bhowmick/Xamarin_WS/TestApp/packages/Xamarin.TestCloud.Agent.0.13.0/lib/Xamarin.iOS10/Calabash.dll" \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	"/Users/itc/Documents/Souvik Bhowmick/Xamarin_WS/TestApp/packages/Xamarin.TestCloud.Agent.0.13.0/lib/Xamarin.iOS10/Calabash.dll" \
+	"/Users/itc/Documents/Souvik Bhowmick/Xamarin_WS/TestApp/TestApp/bin/iPhoneSimulator/Debug//TestApp.exe" \
